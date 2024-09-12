@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors({ origin: 'http://localhost:5173', credentials: true })); // Adjust CORS origin as needed
+app.use(cors({ origin: 'https://courage-quiz.onrender.com', credentials: true })); // Adjust CORS origin as needed
 
 // Passport.js middleware
 require('./config/passport'); // Initialize Passport configuration
